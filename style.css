@@ -1,0 +1,113 @@
+.container h1 {
+    /*in this section, I have specifically added some elements to my main title of the website. I change the font to make it bigger while adjusting where I would want the title placed as well.*/
+    color: #00642E;
+    font: lexend deca;
+    font-size: 125px;
+    padding: 0px 0px 0 20px;
+    margin-left: 170px;
+    margin-right: 1000px;
+    font-weight: lighter;
+}
+
+.container .topnav {
+    /*this displays the font and color to the text of my navigation.*/
+    font-size: 17px;
+    color: #00642E;
+    background: white;    
+}
+
+.topnav:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.topnav ul {
+    /*this shows how I was able to frame my navigation to the top right*/
+    text-align: right;
+    list-style: none;
+    margin: 0;
+}
+
+.topnav ul li {
+    /*for the dropdown on the "collection" navigations, this will show the options inside as a list with no decoration*/
+    list-style-type: none;
+    float: right;
+    position: relative;
+}
+
+.topnav ul li a {
+    /* the color of the link text and how big I want the font or padding. */
+    text-decoration: none;
+    color: #00642E;
+    padding: 15px 20px;
+    display: block;
+}
+
+.topnav ul li:hover a {
+    /*this is the color behind the navigation bar.*/
+    background: white;
+}
+
+.topnav ul ul{
+    /*this shows how I positioned and placed the links inside of the 'collections' dropdown in the navigation bar*/
+    position: absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    right: 0;
+}
+
+.topnav ul li:hover > ul{
+    /*this is the formula to actually have the dropdown on the 'collections' navigation bar.*/
+    display: block;
+}
+
+.topnav ul ul li:hover a{
+    /*this is where I set the background of the backdrop of collections as white.*/
+    background: white;
+}
+
+.topnav ul ul li{
+    position: relative
+}
+
+.message{
+    float: right;
+    margin-right: 200px;
+}
+
+p {
+    color: #00642E;
+    /*how the text on my paragraph tags will look like*/
+    font-weight: lighter;
+    text-align: center;
+    font: lexend deca;
+}
+    
+body {
+    /*this is how I want the main body to look like and be positioned*/
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: lexend deca;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+a {
+    /*how the link text will display on the navigation bar*/
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+video {
+    /*this shows how I was able to place the video at the center of my page.*/
+    display: block;
+    margin: 0 auto;
+}
